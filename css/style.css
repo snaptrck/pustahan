@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p{font-family: 'Courier New', Courier, monospace;
+font-size: 16px;}
+
+.box1{
+  background-color:lightblue;
+  grid-area: box1;
+  /* align-self: center; Makes children align */
+}
+.box2{
+  background-color: lightcoral;
+  grid-area: box2;
+}
+.box3{
+  background-color: lightcyan;
+  grid-area: box3;
+}
+
+main{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:  
+  "box1 box2 ."
+  ". . box3";
+/* justify-items: center; Makes the items align */ 
+}
+
